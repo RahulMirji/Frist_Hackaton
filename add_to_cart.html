@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart - ShopNow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Basic styling for page */
+        .theme-header {
+            background-color: #343a40;
+            color: white;
+        }
+        .cart-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+        .cart-summary {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .container my-5{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fs-3 fw-bold text-primary" href="#">ShopNow</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="add_to_cart.html" class="text-dark me-3">
+                            <i class="bi bi-cart3 fs-5"></i>
+                        </a>
+                        <div class="dropdown">
+                            <button class="btn btn-link text-dark p-0" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle fs-5"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><h6 class="dropdown-header">Rahul Mirji<br><small>rahulmirji@example.com</small></h6></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="orders.html">Orders</a></li>
+                                <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main content -->
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Products</h2>
+        <div class="row g-4">
+            <!-- Product Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/Fashion/dress/2 men.jpg" class="card-img-top product-image" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Wireless Headphones</h5>
+                        <p class="card-text">$50.00</p>
+                        <button class="btn btn-primary w-100 add-to-cart-btn" data-name="Wireless Headphones" data-price="50.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/sports/7.webp" class="card-img-top product-image" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Running Shoes</h5>
+                        <p class="card-text">$75.00</p>
+                        <button class="btn btn-primary w-100 add-to-cart-btn" data-name="Running Shoes" data-price="75.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/watch/1.jpg" class="card-img-top product-image" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Watch</h5>
+                        <p class="card-text">$120.00</p>
+                        <button class="btn btn-primary w-100 add-to-cart-btn" data-name="Smart Watch" data-price="120.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Summary Section -->
+        <div class="cart-container mt-5">
+            <h3>Cart Summary</h3>
+            <div class="cart-summary">
+                <ul class="list-group" id="cart-items">
+                    <!-- Cart items will be displayed here -->
+                </ul>
+                <div class="d-flex justify-content-between mt-3">
+                    <h5>Total: $<span id="cart-total">0.00</span></h5>
+                    <button class="btn btn-success" id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // JavaScript for managing cart functionality
+        const cartItems = [];
+        const cartItemsContainer = document.getElementById("cart-items");
+        const cartTotal = document.getElementById("cart-total");
+
+        document.querySelectorAll(".add-to-cart-btn").forEach(button => {
+            button.addEventListener("click", () => {
+                const productName = button.getAttribute("data-name");
+                const productPrice = parseFloat(button.getAttribute("data-price"));
+
+                // Add product to cart
+                cartItems.push({ name: productName, price: productPrice });
+
+                // Update cart UI
+                updateCartUI();
+            });
+        });
+
+        function updateCartUI() {
+            // Clear previous items
+            cartItemsContainer.innerHTML = "";
+            let total = 0;
+
+            // Display items in cart
+            cartItems.forEach(item => {
+                const listItem = document.createElement("li");
+                listItem.className = "list-group-item d-flex justify-content-between align-items-center";
+                listItem.textContent = item.name;
+                const priceBadge = document.createElement("span");
+                priceBadge.className = "badge bg-primary rounded-pill";
+                priceBadge.textContent = `$${item.price.toFixed(2)}`;
+                listItem.appendChild(priceBadge);
+                cartItemsContainer.appendChild(listItem);
+                total += item.price;
+            });
+
+            // Update total price
+            cartTotal.textContent = total.toFixed(2);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

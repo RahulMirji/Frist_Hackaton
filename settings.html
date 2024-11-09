@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Settings - ShopNow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fs-3 fw-bold text-primary" href="index.html">ShopNow</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="add_to_cart.html" class="text-dark me-3">
+                            <i class="bi bi-cart3 fs-5"></i>
+                        </a>
+                        <div class="dropdown">
+                            <button class="btn btn-link text-dark p-0" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle fs-5"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item active" href="settings.html">Settings</a></li>
+                                <li><a class="dropdown-item" href="orders.html">Orders</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="mb-4">User Settings</h1>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Account Settings</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" value="john.doe@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">New Password</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirm New Password</label>
+                                <input type="password" class="form-control" id="confirmPassword">
+                            </div>
+                            <hr>
+                            <h4 class="mb-3">Notification Preferences</h4>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="emailNotifications" checked>
+                                <label class="form-check-label" for="emailNotifications">Receive email notifications</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="smsNotifications">
+                                <label class="form-check-label" for="smsNotifications">Receive SMS notifications</label>
+                            </div>
+                            <hr>
+                            <h4 class="mb-3">Privacy Settings</h4>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="profileVisibility" checked>
+                                <label class="form-check-label" for="profileVisibility">Make my profile visible to other users</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="activityTracking" checked>
+                                <label class="form-check-label" for="activityTracking">Allow activity tracking for personalized recommendations</label>
+                            </div>
+                            <hr>
+                            <h4 class="mb-3">Language and Region</h4>
+                            <div class="mb-3">
+                                <label for="language" class="form-label">Preferred Language</label>
+                                <select class="form-select" id="language">
+                                    <option value="en">English</option>
+                                    <option value="es">Español</option>
+                                    <option value="fr">Français</option>
+                                    <option value="de">Deutsch</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="timezone" class="form-label">Timezone</label>
+                                <select class="form-select" id="timezone">
+                                    <option value="UTC-8">Pacific Time (PT)</option>
+                                    <option value="UTC-5">Eastern Time (ET)</option>
+                                    <option value="UTC+0">Coordinated Universal Time (UTC)</option>
+                                    <option value="UTC+1">Central European Time (CET)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>ShopNow is your one-stop destination for all your shopping needs. We offer a wide range of products at competitive prices.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">FAQ</a></li>
+                        <li><a href="#" class="text-white">Shipping Information</a></li>
+                        <li><a href="#" class="text-white">Returns Policy</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="email" placeholder="Your email" aria-label="Subscribe">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="text-center mb-0">&copy; 2024 Developed by Girsh and Team.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNow - Your One-Stop E-commerce Destination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fs-3 fw-bold text-primary" href="#">ShopNow</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="add_to_cart.html" class="text-dark me-3">
+                            <i class="bi bi-cart3 fs-5"></i>
+                        </a>
+                        <div class="dropdown">
+                            <button class="btn btn-link text-dark p-0" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle fs-5"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><h6 class="dropdown-header">Rahul Mirji<br><small>rahulmirji@example.com</small></h6></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="orders.html">Orders</a></li>
+                                <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section py-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-8 hero-content">
+                        <h1 class="display-4 fw-bold mb-4">Discover Your Style</h1>
+                        <p class="lead mb-4">Explore our latest collection and find the perfect look for you.</p>
+                        <form class="d-flex mb-4">
+                            <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Featured Categories</h2>
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="text-center">
+                            <div class="category-icon">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="h5">Electronics</h3>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="text-center">
+                            <div class="category-icon">
+                                <i class="bi bi-bag"></i>
+                            </div>
+                            <h3 class="h5">Fashion</h3>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="text-center">
+                            <div class="category-icon">
+                                <i class="bi bi-house"></i>
+                            </div>
+                            <h3 class="h5">Home & Garden</h3>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="text-center">
+                            <div class="category-icon">
+                                <i class="bi bi-bicycle"></i>
+                            </div>
+                            <h3 class="h5">Sports</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Electronics Products -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Electronics</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/phone/1.jpg" class="card-img-top" alt="Smartphone">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartphone X</h5>
+                                <p class="card-text">Latest model with advanced features and long battery life.</p>
+                                <p class="fw-bold">₹699.99</p>
+                                <a href="add_to_cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/mac/1.jpg" class="card-img-top" alt="Laptop">
+                            <div class="card-body">
+                                <h5 class="card-title">Ultrabook Pro</h5>
+                                <p class="card-text">Slim and powerful laptop for professionals on the go.</p>
+                                <p class="fw-bold">₹1299.99</p>
+                                <a href="add_to_cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/watch/1.jpg" class="card-img-top" alt="Smartwatch">
+                            <div class="card-body">
+                                <h5 class="card-title">FitTech Watch</h5>
+                                <p class="card-text">Track your fitness and stay connected with this smartwatch.</p>
+                                <p class="fw-bold">₹199.99</p>
+                                <a href="add_to_cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/ear podes/1.jpg" class="card-img-top" alt="Headphones">
+                            <div class="card-body">
+                                <h5 class="card-title">NoiseCancel Pro</h5>
+                                <p class="card-text">Premium noise-cancelling headphones for immersive audio.</p>
+                                <p class="fw-bold">₹249.99</p>
+                                <a href="add_to_cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/iPad/1.jpg" class="card-img-top" alt="Tablet">
+                            <div class="card-body">
+                                <h5 class="card-title">TabletPro 12</h5>
+                                <p class="card-text">Versatile tablet for work and entertainment.</p>
+                                <p class="fw-bold">₹499.99</p>
+                                <a href="add_to_cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/camera/1.jpg" class="card-img-top" alt="Camera">
+                            <div class="card-body">
+                                <h5 class="card-title">PixelMaster DSLR</h5>
+                                <p class="card-text">High-resolution camera for professional photography.</p>
+                                <p class="fw-bold">₹899.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fashion Products -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Fashion</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/Fashion/dress/1.jpg" class="card-img-top" alt="Summer Dress">
+                            <div class="card-body">
+                                <h5 class="card-title">Floral Summer Dress</h5>
+                                <p class="card-text">Light and breezy dress perfect for summer days.</p>
+                                <p class="fw-bold">₹59.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/Fashion/dress/2 men.jpg" class="card-img-top" alt="Jeans">
+                            <div class="card-body">
+                                <h5 class="card-title">Classic Denim Jeans</h5>
+                                <p class="card-text">Comfortable and stylish jeans for everyday wear.</p>
+                                <p class="fw-bold">₹79.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/Fashion/make up/1.webp" class="card-img-top" alt="Sneakers">
+                            <div class="card-body">
+                                <h5 class="card-title">Makeup Kit</h5>
+                                <p class="card-text">Trendy makeup for girls for awesome look.</p>
+                                <p class="fw-bold">₹89.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/Fashion/dress/2 men.jpg" class="card-img-top" alt="Leather Jacket">
+                            <div class="card-body">
+                                <h5 class="card-title">Classic Leather Jacket</h5>
+                                <p class="card-text">Timeless leather jacket for a bold statement.</p>
+                                <p class="fw-bold">₹199.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/watch/1.jpg" class="card-img-top" alt="Watch">
+                            <div class="card-body">
+                                <h5 class="card-title">Elegant Wristwatch</h5>
+                                <p class="card-text">Sophisticated timepiece for any occasion.</p>
+                                <p class="fw-bold">₹149.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/Fashion/Necklace/1.jpg" class="card-img-top" alt="Sunglasses">
+                            <div class="card-body">
+                                <h5 class="card-title">Gold Necklace</h5>
+                                <p class="card-text">Gold Necklace for trendy look and fashion.</p>
+                                <p class="fw-bold">₹129.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home & Garden Products -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Home & Garden</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/furniturs/1.webp" class="card-img-top" alt="Sofa">
+                            <div class="card-body">
+                                <h5 class="card-title">Modern Sofa</h5>
+                                <p class="card-text">Comfortable and stylish sofa for your living room.</p>
+                                <p class="fw-bold">₹799.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/furniturs/2.webp" class="card-img-top" alt="Table Lamp">
+                            <div class="card-body">
+                                <h5 class="card-title">Elegant Table Lamp</h5>
+                                <p class="card-text">Stylish lamp to brighten up any room.</p>
+                                <p class="fw-bold">₹59.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/furniturs/1.webp" class="card-img-top" alt="Blender">
+                            <div class="card-body">
+                                <h5 class="card-title">High-Power Blender</h5>
+                                <p class="card-text">Versatile blender for all your kitchen needs.</p>
+                                <p class="fw-bold">₹89.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/furniturs/1.webp" class="card-img-top" alt="Indoor Plant">
+                            <div class="card-body">
+                                <h5 class="card-title">Indoor Plant Set</h5>
+                                <p class="card-text">Set of 3 easy-care plants to liven up your space.</p>
+                                <p class="fw-bold">₹49.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/furniturs/2.webp" class="card-img-top" alt="Curtains">
+                            <div class="card-body">
+                                <h5 class="card-title">Blackout Curtains</h5>
+                                <p class="card-text">Energy-efficient curtains for better sleep.</p>
+                                <p class="fw-bold">₹79.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/furniturs/1.webp" class="card-img-top" alt="Vacuum Cleaner">
+                            <div class="card-body">
+                                <h5 class="card-title">Smart Vacuum Cleaner</h5>
+                                <p class="card-text">Robotic vacuum for effortless cleaning.</p>
+                                <p class="fw-bold">₹299.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sports Products -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Sports</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/sports/1.jpg" class="card-img-top" alt="Yoga Mat">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium Yoga Mat</h5>
+                                <p class="card-text">Non-slip yoga mat for comfortable practice.</p>
+                                <p class="fw-bold">₹39.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/sports/2.webp" class="card-img-top" alt="Running Shoes">
+                            <div class="card-body">
+                                <h5 class="card-title">Pro Running Shoes</h5>
+                                <p class="card-text">Lightweight shoes for optimal performance.</p>
+                                <p class="fw-bold">₹129.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/sports/3.webp" class="card-img-top" alt="Dumbbells">
+                            <div class="card-body">
+                                <h5 class="card-title">Adjustable Dumbbells</h5>
+                                <p class="card-text">Space-saving dumbbells for home workouts.</p>
+                                <p class="fw-bold">₹199.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/sports/4.webp" class="card-img-top" alt="Tennis Racket">
+                            <div class="card-body">
+                                <h5 class="card-title">Professional Tennis Racket</h5>
+                                <p class="card-text">High-performance racket for tennis enthusiasts.</p>
+                                <p class="fw-bold">₹159.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/sports/5.webp" class="card-img-top" alt="Basketball">
+                            <div class="card-body">
+                                <h5 class="card-title">Indoor/Outdoor Basketball</h5>
+                                <p class="card-text">Durable basketball for all courts.</p>
+                                <p class="fw-bold">₹29.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card">
+                            <img src="images/sports/6.webp" class="card-img-top" alt="Fitness Tracker">
+                            <div class="card-body">
+                                <h5 class="card-title">Advanced Fitness Tracker</h5>
+                                <p class="card-text">Track your workouts and health metrics.</p>
+                                <p class="fw-bold">₹99.99</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>ShopNow is your one-stop destination for all your shopping needs. We offer a wide range of products at competitive prices.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">FAQ</a></li>
+                        <li><a href="#" class="text-white">Shipping Information</a></li>
+                        <li><a href="#" class="text-white">Returns Policy</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="email" placeholder="Your email" aria-label="Subscribe">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="text-center mb-0">&copy; 2024 Developed By Girish and Team. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - ShopNow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fs-3 fw-bold text-primary" href="index.html">ShopNow</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="add_to_cart.html" class="text-dark me-3">
+                            <i class="bi bi-cart3 fs-5"></i>
+                        </a>
+                        <div class="dropdown">
+                            <button class="btn btn-link text-dark p-0" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle fs-5"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                                <li><a class="dropdown-item active" href="orders.html">Orders</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="mb-4">My Orders</h1>
+        <div class="row">
+            <div class="col-12">
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="images/sports/1.jpg" alt="Laptop" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="card-title">Ultrabook Pro</h5>
+                                <p class="card-text">Order #12346 - Placed on June 10, 2024</p>
+                                <p class="card-text"><small class="text-muted">Status: Shipped</small></p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="fw-bold">$1299.99</p>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="images/phone/1.jpg" alt="Headphones" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="card-title">NoiseCancel Pro Headphones</h5>
+                                <p class="card-text">Order #12347 - Placed on June 5, 2024</p>
+                                <p class="card-text"><small class="text-muted">Status: Delivered</small></p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="fw-bold">$249.99</p>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="images/mac/1.jpg" alt="Smartwatch" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="card-title">FitTech Smartwatch</h5>
+                                <p class="card-text">Order #12348 - Placed on May 28, 2024</p>
+                                <p class="card-text"><small class="text-muted">Status: Delivered</small></p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="fw-bold">$199.99</p>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="images/furniturs/1.webp" alt="Camera" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="card-title">PixelMaster DSLR Camera</h5>
+                                <p class="card-text">Order #12349 - Placed on May 20, 2024</p>
+                                <p class="card-text"><small class="text-muted">Status: Delivered</small></p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="fw-bold">$899.99</p>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="images/Fashion/dress/2 men.jpg" alt="Tablet" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="card-title">TabletPro 12</h5>
+                                <p class="card-text">Order #12350 - Placed on May 15, 2024</p>
+                                <p class="card-text"><small class="text-muted">Status: Delivered</small></p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="fw-bold">$499.99</p>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>ShopNow is your one-stop destination for all your shopping needs. We offer a wide range of products at competitive prices.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">FAQ</a></li>
+                        <li><a href="#" class="text-white">Shipping Information</a></li>
+                        <li><a href="#" class="text-white">Returns Policy</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="email" placeholder="Your email" aria-label="Subscribe">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="text-center mb-0">&copy; 2024 Developed by Girsh and Team. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ShopNow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-image: url('https://source.unsplash.com/random/1200x600?retail');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fs-3 fw-bold text-primary" href="index.html">ShopNow</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                        
+                    <div class="d-flex align-items-center">
+                        <a href="add_to_cart.html" class="text-dark me-3">
+                            <i class="bi bi-cart3 fs-5"></i>
+                        </a>
+                        <div class="dropdown">
+                            <button class="btn btn-link text-dark p-0" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle fs-5"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><h6 class="dropdown-header">John Doe<br><small>john@example.com</small></h6></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Orders</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section py-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-8 hero-content">
+                        <h1 class="display-4 fw-bold mb-4">About ShopNow</h1>
+                        <p class="lead mb-4">Discover the story behind your favorite online shopping destination.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h2 class="mb-4">Our Story</h2>
+                        <p>ShopNow was founded in 2015 with a simple mission: to make online shopping easy, enjoyable, and accessible to everyone. What started as a small startup has grown into a leading e-commerce platform, serving millions of customers worldwide.</p>
+                        <p>Our journey has been driven by innovation, customer-centricity, and a passion for connecting people with the products they love. We've continuously evolved our platform, integrating cutting-edge technology to provide a seamless shopping experience.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <img src="https://source.unsplash.com/random/600x400?office" alt="ShopNow Office" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Values</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Customer First</h3>
+                                <p class="card-text">We put our customers at the heart of everything we do, striving to exceed their expectations at every touchpoint.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Innovation</h3>
+                                <p class="card-text">We embrace change and continuously seek new ways to improve our services and the shopping experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Integrity</h3>
+                                <p class="card-text">We operate with honesty and transparency, building trust with our customers, partners, and employees.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Commitment</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h3 class="h4 mb-3">Quality Products</h3>
+                        <p>We carefully curate our product selection, partnering with trusted brands and sellers to ensure that every item meets our high standards of quality.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3 class="h4 mb-3">Exceptional Service</h3>
+                        <p>Our dedicated customer support team is always ready to assist you, ensuring that your shopping experience is smooth and satisfactory from start to finish.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3 class="h4 mb-3">Secure Shopping</h3>
+                        <p>We employ state-of-the-art security measures to protect your personal information and ensure safe transactions.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3 class="h4 mb-3">Sustainability</h3>
+                        <p>We're committed to reducing our environmental impact through eco-friendly packaging and supporting sustainable brands.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-primary text-white">
+            <div class="container text-center">
+                <h2 class="mb-4">Join Our Journey</h2>
+                <p class="lead mb-4">Be part of our growing community and enjoy a world-class shopping experience.</p>
+                <a href="#" class="btn btn-light btn-lg">Start Shopping Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>ShopNow is your one-stop destination for all your shopping needs. We offer a wide range of products at competitive prices.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">FAQ</a></li>
+                        <li><a href="#" class="text-white">Shipping Information</a></li>
+                        <li><a href="#" class="text-white">Returns Policy</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="email" placeholder="Your email" aria-label="Subscribe">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="text-center mb-0">&copy; 2024 Developed by Girsh and Team. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
